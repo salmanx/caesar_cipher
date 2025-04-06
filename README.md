@@ -1,21 +1,18 @@
-# Caesar
+# Caesar Cipher
 
-**TODO: Add description**
+### Simple Elixir program for learing purpose
 
-## Installation
+Caesar Cipher module, which maps characters to a new characters. Encrypt the message by applying a mapping that shfits the alphabet by shift number
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `caesar` to your list of dependencies in `mix.exs`:
+### Usages from iex
 
-```elixir
-def deps do
-  [
-    {:caesar, "~> 0.1.0"}
-  ]
-end
+```
+iex> Caesar.Cipher.encrypt("hello world", 1)
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/caesar>.
+### Usages from CLI
 
+```
+./caesar <command> <message> --shift <shift_number>
+./caesar encrypt "hello world" --shift 1
+```
